@@ -1,14 +1,15 @@
 import React from 'react';
-import '../styles/listcharacter.css'
+import { Link } from 'react-router-dom';
+import '../styles/listcharacter.css';
 
 const ListCharacter = ({ character }) => {
   return (
-    <div className='container-list'>
+    <Link className='container-list' to={JSON.stringify(character.id)}>
       <div className='container-hero'>
         <img className='hero__image' src={character.thumbnail.path + '.' + character.thumbnail.extension} alt="" />
       </div>
       <p className='hero__name'>{character.name}</p>
-    </div>
+    </Link>
   );
 }
  
