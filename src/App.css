@@ -1,8 +1,9 @@
 .container-listcharacter{
-  margin: 0 50px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 320px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   column-gap: 20px;
   row-gap: 20px;
+  margin: 0 50px;
   margin-bottom: 40px;
 }

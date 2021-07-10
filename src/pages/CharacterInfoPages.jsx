@@ -25,7 +25,7 @@ const CharacterInfoPages = () => {
 
   return (
     <>
-      <h1>Esto es la página de información por personajes</h1>
+      <h1>Cómics relacionados con el personaje</h1>
       <div className="container-listcharacter">
         {isLoading ? (
           <Spinner />
