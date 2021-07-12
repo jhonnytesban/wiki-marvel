@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ListCharacter from "../components/ListCharacter";
 import Logout from "../components/Logout";
 import Spinner from "../components/Spinner";
+import { useAuth0 } from '@auth0/auth0-react';
 
 //ts=1
 // key privade = fef5b2777a2e6227362e8fff3c55ae369f2d745a
@@ -14,7 +15,9 @@ import Spinner from "../components/Spinner";
 
 const Homepage = () => {
   const [characters, setCharacters] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingComponent, setIsLoadingComponent] = useState(true);
+
+  const { user, isAuthenticated, isLoading } = useAuth0()
 
   useEffect(() => {
     const fetching = async () => {
@@ -25,10 +28,15 @@ const Homepage = () => {
       const { data } = dataRes;
       const { results } = data;
       setCharacters(results);
-      setIsLoading(false);
+      setIsLoadingComponent(false);
       console.log(results);
     };
-    fetching();
+    fetching()
+    if (isLoading) {
+      console.log('Está cargando')
+    } else {
+      console.log( {user ,isAuthenticated, isLoading})
+    }
   }, []);
 
   return (
@@ -36,7 +44,7 @@ const Homepage = () => {
       <Logout />
       <h1>Aplicación sobre la información de los héroes de Marvel</h1>
       <div className="container-listcharacter">
-        {isLoading ? (
+        {isLoadingComponent ? (
           <Spinner />
         ) : (
           characters.map((character) => <ListCharacter key={character.id} character={character} />)
