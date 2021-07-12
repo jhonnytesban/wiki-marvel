@@ -8,7 +8,7 @@ const Navbar = () => {
       <nav className='nav'>
         <ul className='nav-list'>
           <li className='nav__item'>
-            <NavLink exact className='link' activeClassName='active' to='/'>Ir a inicio</NavLink>
+            <NavLink exact className='link' activeClassName='active' to='/personajes'>Personajes</NavLink>
           </li>
           <li className='nav__item'>
             <NavLink exact  className='link' activeClassName='active' to='/comics'>Ir a los comics</NavLink>
