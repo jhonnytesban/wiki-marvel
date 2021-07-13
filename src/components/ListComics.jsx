@@ -10,7 +10,11 @@ const ListComics = ({ comic }) => {
           src={comic.thumbnail.path + "." + comic.thumbnail.extension}
           alt={`comic ${comic.title}`}
         />
-        <p className="title-comic">{comic.title}</p>
+        <p className="title-comic">
+          {comic.title.length >= 35
+            ? comic.title.substring(0, 25) + "..."
+            : comic.title}
+        </p>
         {comic.prices[0].price === 0 ? (
           <p className="price-text">Solo venta digital</p>
         ) : (

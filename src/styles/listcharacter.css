@@ -2,7 +2,7 @@
   padding: 0;
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 2px 8px;
+  box-shadow: 0 2px 4px;
   transition: all .5s;
   box-sizing: border-box;
   text-decoration: none;
@@ -10,9 +10,9 @@
 .container-list:hover{
   transform: translate(0, -10px);
   cursor: pointer;
-  box-shadow: 0 4px 15px;
+  box-shadow: 0 4px 10px;
   transition: all .3s;
-}
+} 
 .hero__image{
   display: block;
   width: 100%;
@@ -20,17 +20,15 @@
   object-fit: cover;
   object-position: left;
   border-radius: 20px 20px 0 0;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 .container-hero{
-  height: 80%;
+  height: 95%;
 }
 .hero__name{
   text-align: center;
   font-size: 16px;
-  position: relative;
-  bottom: 0;
-  box-sizing: border-box;
+  color: black;
   margin-bottom: 0;
 }
 .title-comic{

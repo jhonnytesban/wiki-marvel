@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useAuth0 } from '@auth0/auth0-react';
 import ListCharacter from "../components/ListCharacter";
 import Logout from "../components/Logout";
 import Spinner from "../components/Spinner";
-import { useAuth0 } from '@auth0/auth0-react';
+import '../styles/homepages.css';
 
 //ts=1
 // key privade = fef5b2777a2e6227362e8fff3c55ae369f2d745a
@@ -11,7 +12,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 // hash = 4d198f7702c7709fd1edcdae03375c96
 //url get = https://gateway.marvel.com/v1/public/characters?ts=1&apikey=e0c810e28c52ded9f0f495bb89bdab0e&hash=4d198f7702c7709fd1edcdae03375c96
 
-//Siguiente tarea: Implementar la página de login y la autenticacion ayudado por el video :)
+//Siguiente tarea: Mejorar el diseño de Hompages
 
 const Homepage = () => {
   const [characters, setCharacters] = useState([]);
@@ -40,7 +41,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="App">
+    <>
       <Logout />
       <h1>Aplicación sobre la información de los héroes de Marvel</h1>
       <div className="container-listcharacter">
@@ -50,7 +51,7 @@ const Homepage = () => {
           characters.map((character) => <ListCharacter key={character.id} character={character} />)
         )}
       </div>
-    </div>
+    </>
   );
 };
 
