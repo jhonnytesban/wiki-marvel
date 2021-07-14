@@ -1,14 +1,30 @@
-import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
+import React from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import Spinner from "./Spinner";
 
 const Logout = () => {
-  const { logout } = useAuth0()
+  const { logout, isLoading, isAuthenticated, user } = useAuth0();
 
-  return (
-    <>
-      <button onClick={() => logout({returnTo: window.location.origin})}>Cerrar sesión</button>
-    </>
-  );
-}
- 
+  // if (isLoading) {
+  //   return <Spinner />;
+  // } else if (user) {
+  //   return (
+  //     <button onClick={() => logout({ returnTo: window.location.origin })}>
+  //       Cerrar sesión
+  //     </button>
+  //   );
+  // } else {
+  //   return <>Hola</>;
+  // }
+  if (isAuthenticated) {
+    return (
+      <button onClick={() => logout({ returnTo: window.location.origin })}>
+        Cerrar sesión
+      </button>
+    );
+  } else {
+    return <></>
+  }
+};
+
 export default Logout;

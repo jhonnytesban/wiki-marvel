@@ -18,7 +18,8 @@ const AppRouter = () => {
 
   return (
     <Router>
-      {isAuthenticated && <Navbar />}
+      {/* {isAuthenticated && <Navbar />} */}
+      <Navbar />
       <Switch>
         <Route exact path="/" component={LoginPages} />
         <Route exact path="/personajes">

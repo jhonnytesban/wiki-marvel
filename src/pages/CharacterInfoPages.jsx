@@ -21,7 +21,7 @@ const CharacterInfoPages = () => {
       console.log(results);
     };
     fetching();
-  }, []);
+  }, [id]);
 
   return (
     <>

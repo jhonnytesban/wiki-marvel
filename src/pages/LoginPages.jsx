@@ -1,15 +1,17 @@
-import React from 'react';
-import Login from '../components/Login';
-import Logout from '../components/Logout';
+import React from "react";
+import MenuHamburguer from "../components/MenuHamburguer";
+import "../styles/loginPages.css";
 
 const LoginPages = () => {
   return (
     <>
-      <h1>Login</h1>
-      <Login />
-      <Logout />
+      <header className="login-header">
+        <h1>La web sobre personajes y cómics Marvel</h1>
+        <MenuHamburguer />
+      </header>
+      <main></main>
     </>
   );
-}
- 
+};
+
 export default LoginPages;

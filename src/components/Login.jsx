@@ -7,7 +7,7 @@ const Login = () => {
 
   return (
     <>
-      <button onClick={() => loginWithRedirect({redirectUri: 'http://localhost:3000/personajes'})}>Login</button>
+      <button onClick={() => loginWithRedirect({redirectUri: 'http://localhost:3000/personajes'})}>Inicia Sesión</button>
     </>
   );
 }
