@@ -1,5 +1,7 @@
 import React from "react";
 import MenuHamburguer from "../components/MenuHamburguer";
+import Slider from "../components/Slider";
+
 import "../styles/loginPages.css";
 
 const LoginPages = () => {
@@ -9,7 +11,9 @@ const LoginPages = () => {
         <h1 className='login__title'>Universo Marvel</h1>
         <MenuHamburguer />
       </header>
-      <main></main>
+      <main>
+        <Slider />
+      </main>
     </>
   );
 };

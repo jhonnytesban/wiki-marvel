@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: #202020;
-  padding: 30px 10%;
+  padding: 20px 10%;
 }
 .login__title{
   letter-spacing: 1px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   background-color: rgb(204, 0, 0);
   color: #fff;
