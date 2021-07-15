@@ -6,7 +6,7 @@ const LoginPages = () => {
   return (
     <>
       <header className="login-header">
-        <h1>La web sobre personajes y cómics Marvel</h1>
+        <h1 className='login__title'>Universo Marvel</h1>
         <MenuHamburguer />
       </header>
       <main></main>

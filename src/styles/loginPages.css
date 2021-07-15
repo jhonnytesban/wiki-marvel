@@ -2,7 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  background-color: #202020;
+  padding: 30px 10%;
+}
+.login__title{
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background-color: rgb(204, 0, 0);
+  color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0;
 }
 .header-list{
   list-style: none;

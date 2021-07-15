@@ -4,12 +4,17 @@ import Navbar from './Navbar';
 
 const MenuHamburguer = () => {
 
-  const navegation = useRef()
+  const navRef = useRef()
+
+  const toggleNav = () => {
+    navRef.current.classList.toggle('nav-deactive')
+    navRef.current.classList.toggle('nav-active')
+  }
 
   return (
     <>
-      <MenuIcon />
-      <Navbar ref={navegation}/>
+      <MenuIcon fontSize='large' style={{color: 'white'}} onClick={toggleNav}/>
+      <Navbar navRef={navRef} toggleNav={toggleNav}/>
     </>
   );
 }

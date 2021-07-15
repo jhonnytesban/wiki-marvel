@@ -1,10 +1,22 @@
-.nav{
+.nav-deactive{
   width: 100vw;
   background-color: royalblue;
   padding: 40px;
   position: fixed;
   box-sizing: border-box;
-  right: 100%;
+  left: 100%;
+  top: 0;
+  transition: all 1s;
+}
+.nav-active{
+  width: 100vw;
+  background-color: royalblue;
+  padding: 40px;
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transition: all 1s;
 }
 .nav-list{
   display: flex;

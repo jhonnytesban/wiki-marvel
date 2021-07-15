@@ -1,13 +1,15 @@
 import React, { forwardRef } from "react";
 import { NavLink } from "react-router-dom";
+import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import "../styles/navbar.css";
 import Login from "./Login";
 import Logout from "./Logout";
 
-const Navbar = forwardRef(({ props, navegation }) => {
+const Navbar = forwardRef(({ toggleNav, navRef }) => {
   return (
     <>
-      <nav className="nav" ref={navegation}>
+      <nav className="nav-deactive" ref={navRef}>
+        <MenuOpenIcon fontSize='large' onClick={toggleNav}/>
         <ul className="nav-list">
           <li className="nav__item">
             <NavLink exact className="link" activeClassName="active" to="/">

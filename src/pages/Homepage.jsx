@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ListCharacter from "../components/ListCharacter";
 import Logout from "../components/Logout";
+import MenuHamburguer from "../components/MenuHamburguer";
 import Spinner from "../components/Spinner";
 import "../styles/homepages.css";
 
@@ -29,6 +30,7 @@ const Homepage = () => {
   return (
     <>
       <h1>Aplicación sobre la información de los héroes de Marvel</h1>
+      <MenuHamburguer />
       <button onClick={() => setNumber(number + 20)}>Cargar más datos</button>
       {number !== 0 && <button onClick={() => setNumber(number - 20)}>Atrás</button>}
       
