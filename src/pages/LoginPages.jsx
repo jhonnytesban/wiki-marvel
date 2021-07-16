@@ -1,22 +1,17 @@
 import React from "react";
-import MenuHamburguer from "../components/MenuHamburguer";
 import Slider from "../components/Slider";
 import HeroImage from '../assets/heroe-marvel2.jpg';
-
 import "../styles/loginPages.css";
 import Login from "../components/Login";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const LoginPages = () => {
   return (
     <>
-      <header className="login-header">
-        <h1 className='login__title'>Universo Marvel</h1>
-        <MenuHamburguer />
-      </header>
-      <main>
+      <Header />
+      <main className='main'>
         <Slider />
-        {/* <hr /> */}
         <section className='section-infoLogin'>
           <div className="container-img-hero">
             <img src={HeroImage} alt="" className="hero" />

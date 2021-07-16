@@ -1,0 +1,23 @@
+.login-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #202020;
+  padding: 20px 0;
+  z-index: 100;
+}
+.login__title{
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  background-color: rgb(204, 0, 0);
+  color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 0 0 0 10%;
+}
+.container-menu{
+  margin-right: 10%;
+}
