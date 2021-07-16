@@ -73,9 +73,17 @@
     height: 650px;
   }
   .slide{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "text img";
     height: 650px;
+    overflow: hidden;
   }
   .slide__image {
-    height: 90%;
+    height: 100%;
+    grid-area: img;
+  }
+  .slide__text{
+    grid-area: text;
   }
 }
