@@ -4,6 +4,8 @@ import Slider from "../components/Slider";
 import HeroImage from '../assets/heroe-marvel2.jpg';
 
 import "../styles/loginPages.css";
+import Login from "../components/Login";
+import Footer from "../components/Footer";
 
 const LoginPages = () => {
   return (
@@ -20,10 +22,13 @@ const LoginPages = () => {
             <img src={HeroImage} alt="" className="hero" />
           </div>
           <div className="infoLogin-content">
-            <p className="section__text">Regístrate y conoce todo el contenido Marvel</p>
+            <h2 className='infoLogin__title'>¡Forma parte de la comunidad!</h2>
+            <p className="infoLogin__text">Regístrate y conoce todo el contenido Marvel</p>
+            <Login />
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 };
