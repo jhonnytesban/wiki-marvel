@@ -1,6 +1,6 @@
 .nav-deactive{
   width: 100vw;
-  background-color: royalblue;
+  background-color: #151515;
   padding: 40px;
   position: fixed;
   box-sizing: border-box;
@@ -11,12 +11,13 @@
 }
 .nav-active{
   z-index: 100;
-  width: 100vw;
-  background-color: royalblue;
+  width: 50vw;
+  /* height: 70vh; */
+  background-color: #151515;
   padding: 40px;
   position: fixed;
   box-sizing: border-box;
-  left: 0;
+  left: 50%;
   top: 0;
   transition: all 1s;
 }
@@ -31,13 +32,28 @@
   margin: 0;
 }
 .nav__item{
-  margin: 10px;
+  transform: scale(1, 1);
+  margin: 20px;
+  transition: all .3s;
+}
+.nav__item:hover{
+  transform: scale(1.2, 1.2);
+  transition: all .5s;
 }
 .link{
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-size: 1.2em;
 }
 .active{
   color: red;
+}
+.icon-menu{
+  transform: scale(1.2, 1.2);
+  transition: all .5s;
+}
+.icon-menu:hover {
+  transform: scale(1.4, 1.4);
+  cursor: pointer;
+  transition: all .5s;
 }

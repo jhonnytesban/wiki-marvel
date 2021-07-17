@@ -9,7 +9,7 @@ const Navbar = forwardRef(({ toggleNav, navRef }) => {
   return (
     <>
       <nav className="nav-deactive" ref={navRef}>
-        <MenuOpenIcon fontSize='large' onClick={toggleNav}/>
+        <MenuOpenIcon className='icon-menu' style={{ color: "white" }} fontSize='large' onClick={toggleNav}/>
         <ul className="nav-list">
           <li className="nav__item">
             <NavLink exact className="link" activeClassName="active" to="/">

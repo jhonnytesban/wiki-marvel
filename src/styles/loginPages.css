@@ -26,9 +26,16 @@
   border: .5px solid black;
   color: #fff;
   clip-path: polygon(0 22%, 22% 0, 100% 0, 99% 78%, 78% 100%, 0 100%);
+  transform: scale(1, 1);
   padding: 15px;
   margin: auto;
   margin-bottom: 20px;
+  transition: all .3s;
+}
+.login__btn:hover {
+  transform: scale(1.2, 1.2);
+  transition: all .5s;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {

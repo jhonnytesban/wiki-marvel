@@ -13,6 +13,7 @@ const MenuHamburguer = () => {
   return (
     <div className="container-menu">
       <MenuIcon
+        className='icon-menu'
         fontSize="large"
         style={{ color: "white" }}
         onClick={toggleNav}
