@@ -15,7 +15,7 @@ const CharacterInfoPages = () => {
   useEffect(() => {
     const fetching = async () => {
       const res = await fetch(
-        `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?ts=1&apikey=e0c810e28c52ded9f0f495bb89bdab0e&hash=4d198f7702c7709fd1edcdae03375c96`
+        `https://gateway.marvel.com/v1/public/characters/1011334?ts=1&apikey=e0c810e28c52ded9f0f495bb89bdab0e&hash=4d198f7702c7709fd1edcdae03375c96`
       );
       const dataRes = await res.json();
       const { results } = await dataRes.data;
@@ -31,7 +31,7 @@ const CharacterInfoPages = () => {
       <Header />
       <div className="characterInfoPages-container">
         <h1 className='characterInfoPages__title'>Información relacionado con el personaje</h1>
-        <div className="container-listcharacter">
+        {/* <div className="container-listcharacter">
           {isLoading ? (
             <Spinner />
           ) : (
@@ -39,7 +39,7 @@ const CharacterInfoPages = () => {
               <InfoCharacter key={info.id} info={info} />
             ))
           )}
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
