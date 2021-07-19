@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -6,7 +6,7 @@ import InfoCharacter from "../components/InfoCharacter";
 import Spinner from "../components/Spinner";
 import '../styles/CharacterInfoPages.css'
 
-const CharacterInfoPages = () => {
+const CharacterInfoPages = memo(() => {
   const { id } = useParams();
 
   const [infoCharacter, setInfoCharacter] = useState([]);
@@ -44,6 +44,6 @@ const CharacterInfoPages = () => {
       <Footer />
     </>
   );
-};
+});
 
 export default CharacterInfoPages;

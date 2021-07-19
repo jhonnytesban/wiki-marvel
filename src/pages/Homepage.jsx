@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ListCharacter from "../components/ListCharacter";
-import Logout from "../components/Logout";
-import MenuHamburguer from "../components/MenuHamburguer";
+// import Logout from "../components/Logout";
+// import MenuHamburguer from "../components/MenuHamburguer";
 import Spinner from "../components/Spinner";
 import "../styles/homepages.css";
 
-//Siguiente tarea: Mejorar el diseño de Hompages
-
-const Homepage = () => {
+const Homepage = memo(() => {
   const [characters, setCharacters] = useState([]);
   const [isLoadingComponent, setIsLoadingComponent] = useState(true);
   const [number, setNumber] = useState(0);
@@ -28,7 +26,6 @@ const Homepage = () => {
       console.log(data);
     };
     fetching();
-    console.log("Hola");
   }, [number]);
 
   return (
@@ -38,7 +35,6 @@ const Homepage = () => {
         <h1 className="homePage-main__title">
           Aplicación sobre la información de los héroes de Marvel
         </h1>
-        {/* <MenuHamburguer /> */}
         <div className="homePage-containerBtn">
           {number !== 0 && (
             <button
@@ -70,6 +66,6 @@ const Homepage = () => {
       <Footer />
     </>
   );
-};
+});
 
 export default Homepage;

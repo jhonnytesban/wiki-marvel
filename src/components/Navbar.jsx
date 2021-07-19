@@ -5,7 +5,7 @@ import "../styles/navbar.css";
 import Login from "./Login";
 import Logout from "./Logout";
 
-const Navbar = forwardRef(({ toggleNav, navRef }) => {
+const Navbar = forwardRef(({ props,toggleNav, navRef }) => {
   return (
     <>
       <nav className="nav-deactive" ref={navRef}>

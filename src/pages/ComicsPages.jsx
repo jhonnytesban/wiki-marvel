@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import ListComics from "../components/ListComics";
 import Spinner from "../components/Spinner";
 
-const ComicsPages = () => {
+const ComicsPages = memo(() => {
   const [comics, setComics] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,6 +33,6 @@ const ComicsPages = () => {
       </div>
     </>
   );
-};
+});
 
 export default ComicsPages;
