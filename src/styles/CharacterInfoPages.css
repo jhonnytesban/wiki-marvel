@@ -1,0 +1,9 @@
+.characterInfoPages-container{
+  padding-top: 80px;
+  background-color: #353535;
+  padding-bottom: 80px;
+}
+.characterInfoPages__title{
+  color: #fff;
+  text-align: center;
+}

@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import InfoCharacter from "../components/InfoCharacter";
 import Spinner from "../components/Spinner";
+import '../styles/CharacterInfoPages.css'
 
 const CharacterInfoPages = () => {
   const { id } = useParams();
@@ -25,14 +28,20 @@ const CharacterInfoPages = () => {
 
   return (
     <>
-      <h1>Cómics relacionados con el personaje</h1>
-      <div className="container-listcharacter">
-        {isLoading ? (
-          <Spinner />
-        ) : (
-          infoCharacter.map((info) => <InfoCharacter key={info.id} info={info} />)
-        )}
+      <Header />
+      <div className="characterInfoPages-container">
+        <h1 className='characterInfoPages__title'>Información relacionado con el personaje</h1>
+        <div className="container-listcharacter">
+          {isLoading ? (
+            <Spinner />
+          ) : (
+            infoCharacter.map((info) => (
+              <InfoCharacter key={info.id} info={info} />
+            ))
+          )}
+        </div>
       </div>
+      <Footer />
     </>
   );
 };
