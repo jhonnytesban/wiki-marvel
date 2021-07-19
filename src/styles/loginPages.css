@@ -48,4 +48,10 @@
   .hero{
     height: 500px;
   }
+  .infoLogin__title{
+    font-size: 2rem;
+  }
+  .infoLogin__text{
+    font-size: 1.4rem;
+  }
 }

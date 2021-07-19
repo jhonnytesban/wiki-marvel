@@ -1,11 +1,12 @@
 .container-list{
-  padding: 0;
+  text-decoration: none;
+  background-color: #fff;
   position: relative;
-  border-radius: 20px;
+  /* border-radius: 0 0 20px 20px; */
   box-shadow: 0 2px 4px;
   transition: all .5s;
   box-sizing: border-box;
-  text-decoration: none;
+  padding: 10px;
 }
 .container-list:hover{
   transform: translate(0, -10px);
