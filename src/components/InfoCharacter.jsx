@@ -1,12 +1,30 @@
 import React from "react";
-import "../styles/listcharacter.css";
 import "../styles/infocharacter.css";
 
 const InfoCharacter = ({ info }) => {
   return (
     <>
-      <div className="container-list">
-        <div className="container-info">
+      <h1 className="characterInfoPages__title">Información de {info.name}</h1>
+      <div className="infoCharacter-container">
+        <div className="infoCharacter-containerImg">
+          <img
+            className="containerImg__img"
+            src={info.thumbnail.path + "." + info.thumbnail.extension}
+            alt={info.name}
+          />
+        </div>
+        <div className="infoCharacter-content">
+          <hr className="content__separate" />
+          <h2>Biografía</h2>
+          {info.description.length === 0 ? (
+            <p className="infoCharacter__text">
+              Este personaje no tiene descripción
+            </p>
+          ) : (
+            <p className="infoCharacter__text">{info.description}</p>
+          )}
+        </div>
+        {/* <div className="container-info">
           <img
             className="hero__image"
             src={info.thumbnail.path + "." + info.thumbnail.extension}
@@ -24,7 +42,7 @@ const InfoCharacter = ({ info }) => {
               Precio en físico: {info.prices[0].price}
             </p>
           )}
-        </div>
+        </div> */}
       </div>
     </>
   );

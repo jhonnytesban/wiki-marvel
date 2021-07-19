@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ListCharacter from "../components/ListCharacter";
-import Logout from "../components/Logout";
-import MenuHamburguer from "../components/MenuHamburguer";
+// import Logout from "../components/Logout";
+// import MenuHamburguer from "../components/MenuHamburguer";
 import Spinner from "../components/Spinner";
 import "../styles/homepages.css";
 

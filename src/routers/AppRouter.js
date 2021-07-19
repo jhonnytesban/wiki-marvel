@@ -10,11 +10,11 @@ import ComicsPages from "../pages/ComicsPages";
 import Homepage from "../pages/Homepage";
 import LoginPages from "../pages/LoginPages";
 import NotFound from "../pages/NotFound";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import PrivateRoutes from "./PrivateRoutes";
 
 const AppRouter = () => {
-  const { isAuthenticated } = useAuth0();
+  // const { isAuthenticated } = useAuth0();
 
   return (
     <Router>

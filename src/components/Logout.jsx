@@ -1,9 +1,9 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
 
 const Logout = () => {
-  const { logout, isLoading, isAuthenticated, user } = useAuth0();
+  const { logout, isAuthenticated } = useAuth0();
 
   // if (isLoading) {
   //   return <Spinner />;
