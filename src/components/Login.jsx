@@ -10,7 +10,7 @@ const Login = () => {
       <button
         className='login__btn'
         onClick={() =>
-          loginWithRedirect({ redirectUri: "http://localhost:3000/personajes" })
+          loginWithRedirect({ redirectUri: "https://todo-marvel.web.app/personajes" })
         }
       >
         Inicia Sesión
