@@ -46,7 +46,7 @@ const CharacterInfoPages = memo(() => {
           {isLoading ? (
             <Spinner />
           ) : (
-            infoCharacter.map((info) => <InfoCharacter info={info} />)
+            infoCharacter.map((info) => <InfoCharacter key={info.id} info={info} />)
           )}
         </div>
         <h2 className="characterInfoPages-subtitle">Comics relacionados</h2>
@@ -54,7 +54,7 @@ const CharacterInfoPages = memo(() => {
           {isLoadingComics ? (
             <Spinner />
           ) : (
-            infoComics.map((info) => <InfoCharacterComics info={info} />)
+            infoComics.map((info) => <InfoCharacterComics key={info.id} info={info} />)
           )}
         </div>
       </div>

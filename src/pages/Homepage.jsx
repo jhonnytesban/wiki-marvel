@@ -21,7 +21,6 @@ const Homepage = memo(() => {
       const { results } = data;
       setCharacters(results);
       setIsLoadingComponent(false);
-      console.log(data);
     };
     fetching();
   }, [number]);

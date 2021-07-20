@@ -21,7 +21,6 @@ const ComicsPages = memo(() => {
       const { results } = data;
       setComics(results);
       setIsLoading(false);
-      console.log(data);
     };
     fetching();
   }, [number]);

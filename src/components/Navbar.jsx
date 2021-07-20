@@ -1,11 +1,11 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import "../styles/navbar.css";
 import Login from "./Login";
 import Logout from "./Logout";
 
-const Navbar = forwardRef(({ props,toggleNav, navRef }) => {
+const Navbar = ({ toggleNav, navRef }) => {
   return (
     <>
       <nav className="nav-deactive" ref={navRef}>
@@ -46,6 +46,6 @@ const Navbar = forwardRef(({ props,toggleNav, navRef }) => {
       </nav>
     </>
   );
-});
+};
 
 export default Navbar;

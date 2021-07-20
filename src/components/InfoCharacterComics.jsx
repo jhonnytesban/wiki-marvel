@@ -5,7 +5,12 @@ import "../styles/listcharacter.css";
 const InfoCharacterComics = ({ info }) => {
   return (
     <>
-      <div className="container-list">
+      <a
+        className="container-list"
+        target="_blank"
+        rel="noreferrer"
+        href={info.urls[0].url}
+      >
         <div className="container-hero">
           <img
             className="hero__image"
@@ -25,7 +30,7 @@ const InfoCharacterComics = ({ info }) => {
             </p>
           )}
         </div>
-      </div>
+      </a>
     </>
   );
 };
