@@ -3,7 +3,12 @@ import "../styles/listcharacter.css";
 
 const ListComics = ({ comic }) => {
   return (
-    <div className="container-list">
+    <a
+      className="container-list"
+      target="_blank"
+      rel="noreferrer"
+      href={comic.urls[0].url}
+    >
       <div className="container-hero">
         <img
           className="hero__image"
@@ -20,9 +25,8 @@ const ListComics = ({ comic }) => {
         ) : (
           <p className="price-text">Precio en físico{comic.prices[0].price}</p>
         )}
-        {/* <p>{comic.prices[0].price}</p> */}
       </div>
-    </div>
+    </a>
   );
 };
 

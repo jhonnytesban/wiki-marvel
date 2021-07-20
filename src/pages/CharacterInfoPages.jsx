@@ -7,7 +7,6 @@ import InfoCharacterComics from "../components/InfoCharacterComics";
 import Spinner from "../components/Spinner";
 import "../styles/CharacterInfoPages.css";
 
-
 const CharacterInfoPages = memo(() => {
   const { id } = useParams();
 
@@ -25,7 +24,6 @@ const CharacterInfoPages = memo(() => {
       const { results } = await dataRes.data;
       setInfoCharacter(results);
       setIsLoading(false);
-      // console.log(results);
     };
     fetching();
     const fetchingComics = async () => {
@@ -36,7 +34,6 @@ const CharacterInfoPages = memo(() => {
       const { results } = await dataRes.data;
       setInfoComics(results);
       setIsLoadingComics(false);
-      console.log(results);
     };
     fetchingComics();
   }, [id]);
@@ -52,7 +49,7 @@ const CharacterInfoPages = memo(() => {
             infoCharacter.map((info) => <InfoCharacter info={info} />)
           )}
         </div>
-        <h2 className='characterInfoPages-subtitle' >Comics relacionados</h2>
+        <h2 className="characterInfoPages-subtitle">Comics relacionados</h2>
         <div className="container-listcharacter">
           {isLoadingComics ? (
             <Spinner />
@@ -60,15 +57,6 @@ const CharacterInfoPages = memo(() => {
             infoComics.map((info) => <InfoCharacterComics info={info} />)
           )}
         </div>
-        {/* <div className="container-listcharacter">
-          {isLoading ? (
-            <Spinner />
-          ) : (
-            infoCharacter.map((info) => (
-              <InfoCharacter key={info.id} info={info} />
-            ))
-          )}
-        </div> */}
       </div>
       <Footer />
     </>

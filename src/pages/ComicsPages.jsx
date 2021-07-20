@@ -12,7 +12,7 @@ const ComicsPages = memo(() => {
 
   useEffect(() => {
     const fetching = async () => {
-      setIsLoading(true)
+      setIsLoading(true);
       const res = await fetch(
         `https://gateway.marvel.com:443/v1/public/comics?ts=1&apikey=e0c810e28c52ded9f0f495bb89bdab0e&hash=4d198f7702c7709fd1edcdae03375c96&offset=${number}`
       );

@@ -24,25 +24,6 @@ const InfoCharacter = ({ info }) => {
             <p className="infoCharacter__text">{info.description}</p>
           )}
         </div>
-        {/* <div className="container-info">
-          <img
-            className="hero__image"
-            src={info.thumbnail.path + "." + info.thumbnail.extension}
-            alt=""
-          />
-          <p className="hero__name">
-            {info.title.length >= 20
-              ? info.title.substring(0, 22) + "..."
-              : info.title}
-          </p>
-          {info.prices[0].price === 0 ? (
-            <p className="prices-text">Solo venta digital</p>
-          ) : (
-            <p className="prices-text">
-              Precio en físico: {info.prices[0].price}
-            </p>
-          )}
-        </div> */}
       </div>
       
     </>

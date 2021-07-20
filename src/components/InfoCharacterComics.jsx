@@ -1,5 +1,4 @@
 import React from "react";
-// import "../styles/listcharacter.css";
 import "../styles/infocharacter.css";
 import "../styles/listcharacter.css";
 
