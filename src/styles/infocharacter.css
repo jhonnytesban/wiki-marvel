@@ -1,4 +1,4 @@
-.container-info{
+/* .container-info{
   height: 95%;
 }
 .comic__title{
@@ -10,4 +10,39 @@
 .prices-text{
   margin-top: 0;
   text-align: center;
+} */
+.infoCharacter-container{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+  padding: 0 50px;
+}
+.infoCharacter-containerImg{
+  width: 30%;
+}
+.infoCharacter-content{
+  width: 80%;
+  padding: 0 10%;
+}
+.containerImg__img{
+  width: 100%;
+  object-fit: cover;
+}
+.content__separate{
+  width: 50%;
+}
+.infoCharacter__text{
+  color: #fff;
+  letter-spacing: .08rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .infoCharacter-container{
+    display: block;
+  }
+  .infoCharacter-containerImg{
+    width: 80%;
+  }
 }
