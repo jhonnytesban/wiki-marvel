@@ -7,3 +7,12 @@
   color: #fff;
   text-align: center;
 }
+.characterInfoPages-infoCharacterContainer{
+  margin-bottom: 50px;
+}
+.characterInfoPages-subtitle{
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}

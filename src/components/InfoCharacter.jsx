@@ -44,6 +44,7 @@ const InfoCharacter = ({ info }) => {
           )}
         </div> */}
       </div>
+      
     </>
   );
 };
