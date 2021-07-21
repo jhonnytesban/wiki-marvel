@@ -30,7 +30,7 @@ const Homepage = memo(() => {
       <Header />
       <main className="homePage-main">
         <h1 className="homePage-main__title">
-          Aplicación sobre la información de los héroes de Marvel
+          Héroes Marvel
         </h1>
         <div className="homePage-containerBtn">
           {number !== 0 && (
