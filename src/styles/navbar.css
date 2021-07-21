@@ -46,7 +46,11 @@
   font-size: 1.2em;
 }
 .active{
-  color: red;
+  background-color: #fff;
+  color: rgb(204, 0, 0);
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 .icon-menu{
   transform: scale(1.2, 1.2);
@@ -56,4 +60,11 @@
   transform: scale(1.4, 1.4);
   cursor: pointer;
   transition: all .5s;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-active{
+    width: 75vw;
+    left: 35%;
+  }
 }
