@@ -25,7 +25,7 @@ const AppRouter = () => {
         <Route exact path="/comics" >
           <PrivateRoutes component={ComicsPages} />
         </Route>
-        <Route exact path="/:id" >
+        <Route exact path="/personajes/:id" >
           <PrivateRoutes component={CharacterInfoPages} />
         </Route>
         <Route path="*" component={NotFound} />

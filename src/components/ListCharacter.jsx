@@ -4,7 +4,7 @@ import "../styles/listcharacter.css";
 
 const ListCharacter = memo(({ character }) => {
   return (
-    <Link className="container-list" to={JSON.stringify(character.id)}>
+    <Link className="container-list" to={'/personajes/' + JSON.stringify(character.id)}>
       <div className="container-hero">
         <img
           className="hero__image"
